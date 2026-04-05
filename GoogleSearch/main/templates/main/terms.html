@@ -1,0 +1,35 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}Google Terms of Service{%endblock%}
+
+{% block main_content %}
+
+<div class="terms-page">
+
+    <!-- Illustration -->
+    <div class="terms-illustration" style="text-align: center; margin-top: 80px; margin-bottom: 20px;">
+    <img src="{% static 'images/tos_main_illustration.svg' %}" 
+         alt="Terms"
+         style="width: 800px; height: auto;">
+    </div>
+
+    <!-- Main Content -->
+    <h1>Google Terms of Service</h1>
+    <p class="effective-date">Effective 5 January 2022</p>
+
+    <!-- Sections -->
+    <div class="terms-text">
+        <p><a href="https://policies.google.com/terms?hl=en-SA&fg=1" target="_blank">Country version:</a> Saudi Arabia</p>
+        <h2>What's covered in these terms</h2>
+        <p><b>We know it’s tempting to skip these Terms of Service, but it’s important to establish what you can expect from us as you
+        use Google <br> <a href="https://policies.google.com/terms?hl=en-SA&fg=1" target="_blank">services</a>, and what we expect from you.</b></p>
+        <p>These Terms of Service reflect <a href="https://about.google/company-info/how-our-business-works/" target="_blank">the way that Google’s business works</a>, the laws that apply to our company, and <a href="https://about.google/company-info/philosophy/" target="_blank">certain things that we’ve always believed to be true.</a>
+        As a result, these Terms of Service help define Google’s relationship with
+        you as you interact with our services. For example, these terms include the following topic headings:</p>
+    </div>
+
+</div>
+
+{% endblock %}
+
