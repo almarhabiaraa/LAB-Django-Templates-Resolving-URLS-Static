@@ -13,19 +13,21 @@
                 <img src="{% static 'images/google-logo.png' %}" alt="Google Logo" class="logo">
             </div>
 
-            <div class="search-container"> 
-                <form action="{% url 'main:search' %}" method="get">
+            <form action="https://www.google.com/search" method="get">
+                <div class="search-bar">
+                    <span class="material-symbols-outlined search-icon">search</span>
                     <input type="text" name="q" placeholder="Search Google or type a URL" required>
-                    <button type="submit">Search</button>
-                </form>
-            </div>
+                    <span class="material-symbols-outlined">mic</span>
+                    <span class="material-symbols-outlined">photo_camera</span>
+                </div>
 
-            <div class="buttons-container">
-                <button type="submit">Google Search</button>
-                <button type="submit">I'm Feeling Lucky</button>
-            </div>  
+                <div class="buttons-container">
+                    <button type="submit">Google Search</button>
+                    <button type="submit">I'm Feeling Lucky</button>
+                </div>
+            </form>
 
-             <div class="language-container">
+            <div class="language-container">
                 <p>Google offered in: <a class="language-link" href="">Arabic</a> </p>
             </div>
 

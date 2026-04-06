@@ -10,6 +10,8 @@
     <title>{% block title %}{%endblock%}</title>
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=apps" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <!-- Body -->
@@ -57,7 +59,7 @@
 
         <div class="right-footer-nav">
             <a href="#">Privacy</a>
-            <a href="#">Terms</a>
+            <a href="{% url 'main:terms' %}">Terms</a>
             <a href="#">Settings</a>
         </div>
 
