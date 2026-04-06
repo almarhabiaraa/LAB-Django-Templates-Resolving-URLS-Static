@@ -10,12 +10,3 @@ def home_view(request : HttpRequest):
 
 def terms_view(request : HttpRequest):
     return render(request, "main/terms.html")
-
-def search(request):
-    query = request.GET.get('q')
-
-    context = {
-        'query': query
-    }
-
-    return render(request, 'main/search.html', context)
